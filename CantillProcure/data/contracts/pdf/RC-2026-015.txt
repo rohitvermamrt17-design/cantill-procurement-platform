@@ -1,0 +1,40 @@
+                                                        RATE CONTRACT
+                                                           Contract No. RC-2026-015
+
+This Rate Contract is entered into on 2026-07-01 between Corvo Engineering Pvt Ltd, having its registered
+office at Plot 14, MIDC Bhosari, Pune 411026 ("the Buyer"), and Unbrako Fastener Distributors, Pune
+(Supplier ID S006) ("the Supplier").
+
+1. Term. This contract is valid from 2026-07-01 to 2027-06-30 (both days inclusive), unless terminated earlier in
+writing.
+
+2. Value ceiling. The total value of purchase orders placed under this contract shall not exceed INR 5,00,000
+(excluding GST). Orders beyond the ceiling require a fresh sourcing event.
+
+3. Rates. The Supplier shall supply the items in Schedule A at the fixed rates below, excluding GST, delivered to
+the Buyer's plants at PUN1 (Bhosari) and CHK1 (Chakan). Rates are firm for the term of the contract.
+
+4. Payment. 45 days from receipt of material and invoice.
+
+5. Delivery. Within 7 working days of the purchase order unless agreed otherwise.
+
+Schedule A: Items and rates
+
+      #           Item code                                     Description            UoM             Rate (INR)
+
+  1         ITM-1009                     Hex bolt M10x40 GR 8.8                       NOS                            6.45
+
+  2         ITM-1014                     Hex bolt M16x60 GR 10.9                      NOS                           20.64
+
+
+
+
+For Corvo Engineering Pvt Ltd                                                          For Unbrako Fastener Distributors
+
+
+Authorised Signatory                                                                   Authorised Signatory
+
+
+
+Fictional document created for the Cantill.ai Full-stack Intern task.
+

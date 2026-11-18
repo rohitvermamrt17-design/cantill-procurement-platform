@@ -1,0 +1,42 @@
+                                                        RATE CONTRACT
+                                                           Contract No. RC-2025-011
+
+This Rate Contract is entered into on 2025-04-01 between Corvo Engineering Pvt Ltd, having its registered
+office at Plot 14, MIDC Bhosari, Pune 411026 ("the Buyer"), and Bhosari Steel Traders, Pune (Supplier ID
+S001) ("the Supplier").
+
+1. Term. This contract is valid from 2025-04-01 to 2027-03-31 (both days inclusive), unless terminated earlier in
+writing.
+
+2. Value ceiling. The total value of purchase orders placed under this contract shall not exceed INR 60,00,000
+(excluding GST). Orders beyond the ceiling require a fresh sourcing event.
+
+3. Rates. The Supplier shall supply the items in Schedule A at the fixed rates below, excluding GST, delivered to
+the Buyer's plants at PUN1 (Bhosari) and CHK1 (Chakan). Rates are firm for the term of the contract.
+
+4. Payment. 45 days from receipt of material and invoice.
+
+5. Delivery. Within 7 working days of the purchase order unless agreed otherwise.
+
+Schedule A: Items and rates
+
+      #           Item code                                     Description            UoM          Rate (INR)
+
+  1         ITM-1001                     MS sheet 2mm 1250x2500                       NOS                   6,340.39
+
+  2         ITM-1002                     MS sheet 3mm 1250x2500                       NOS                   9,168.71
+
+  3         ITM-1003                     EN8 round bar 40mm                           KG                         83.69
+
+
+
+
+For Corvo Engineering Pvt Ltd                                                                For Bhosari Steel Traders
+
+
+Authorised Signatory                                                                         Authorised Signatory
+
+
+
+Fictional document created for the Cantill.ai Full-stack Intern task.
+

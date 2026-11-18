@@ -1,0 +1,40 @@
+                                                        RATE CONTRACT
+                                                           Contract No. RC-2026-005
+
+This Rate Contract is entered into on 2026-02-01 between Corvo Engineering Pvt Ltd, having its registered
+office at Plot 14, MIDC Bhosari, Pune 411026 ("the Buyer"), and Metalink Alloys, Nashik (Supplier ID S004)
+("the Supplier").
+
+1. Term. This contract is valid from 2026-02-01 to 2027-01-31 (both days inclusive), unless terminated earlier in
+writing.
+
+2. Value ceiling. The total value of purchase orders placed under this contract shall not exceed INR 35,00,000
+(excluding GST). Orders beyond the ceiling require a fresh sourcing event.
+
+3. Rates. The Supplier shall supply the items in Schedule A at the fixed rates below, excluding GST, delivered to
+the Buyer's plants at PUN1 (Bhosari) and CHK1 (Chakan). Rates are firm for the term of the contract.
+
+4. Payment. 45 days from receipt of material and invoice.
+
+5. Delivery. Within 7 working days of the purchase order unless agreed otherwise.
+
+Schedule A: Items and rates
+
+      #          Item code                                      Description            UoM        Rate (INR)
+
+  1        ITM-1006                     Aluminium plate 6061 10mm                     KG                   329.54
+
+  2        ITM-1007                     MS flat 50x6                                  KG                    65.78
+
+
+
+
+For Corvo Engineering Pvt Ltd                                                                For Metalink Alloys
+
+
+Authorised Signatory                                                                         Authorised Signatory
+
+
+
+Fictional document created for the Cantill.ai Full-stack Intern task.
+

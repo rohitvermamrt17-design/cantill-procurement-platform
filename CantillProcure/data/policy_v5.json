@@ -1,0 +1,26 @@
+{
+  "document": "CORVO-PROC-POL-04",
+  "version": "5.0",
+  "effective_date": "2026-04-01",
+  "owner": "Head of Procurement",
+  "rules": {
+    "clubbing_days": 14,
+    "need_by_tolerance_days": 7,
+    "history_days": 365,
+    "preferred_supplier_days": 548,
+    "emergency_limit": 500000,
+    "spot_limit": 200000,
+    "rfq_limit": 1000000,
+    "po_consolidation_hours": 24,
+    "decision_order": ["capex", "contract", "emergency", "spot", "rfq", "rfp"]
+  },
+  "rule_definitions": [
+    {"id":"5.1","when":{"item_type":"Capex"},"outcome":"SOURCING_REQUEST","route":"CAPEX_SOURCING","suggestions":5},
+    {"id":"5.2","when":{"usable_contract":true},"outcome":"PO","route":"CONTRACT_PO"},
+    {"id":"5.3","when":{"emergency":true,"value_lte":500000,"active_purchase_within_days":365},"outcome":"PO","route":"EMERGENCY_PO"},
+    {"id":"5.4","when":{"value_lt":200000,"active_purchase_within_days":365},"outcome":"PO","route":"SPOT_PO"},
+    {"id":"5.5","when":{"value_lt":1000000},"outcome":"SOURCING_REQUEST","route":"RFQ","suggestions":3},
+    {"id":"5.6","when":{"value_gte":1000000},"outcome":"SOURCING_REQUEST","route":"RFP","suggestions":5}
+  ],
+  "change_log": []
+}

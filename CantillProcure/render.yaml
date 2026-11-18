@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: cantill-procure
+    runtime: docker
+    plan: starter
+    healthCheckPath: /api/summary
+    disk:
+      name: cantill-procure-data
+      mountPath: /app/data
+      sizeGB: 1

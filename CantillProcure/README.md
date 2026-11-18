@@ -1,0 +1,73 @@
+# Cantill Procure — Corvo Engineering
+
+Policy-driven purchase requisition intake, decisioning and buyer workspace built for the Cantill.ai Full-stack Intern challenge.
+
+## Run locally (one command)
+
+Requires Docker Desktop.
+
+```bash
+docker compose up --build
+```
+
+Open **http://localhost:8000**. The app uses a local SQLite audit database and the supplied CSV/PDF task-kit data. The `data/` directory is mounted so policy versions, contracts and audit data persist across container restarts.
+
+Without Docker:
+
+```bash
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# macOS/Linux: source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+
+PDF contract and policy text extraction uses `pdftotext` (installed in the Docker image; install Poppler locally if using PDF upload locally).
+
+## What is implemented
+
+- Chat-first PR intake with item-master matching, clarification for missing item/quantity/plant/need-by date, and explicit confirmation before creating a PR.
+- Sample-format PR CSV batch upload and `POST /api/process-batch` decision API.
+- Item matching, no-split requirement clubbing, valuation, active supplier/contract checks, contract ceilings, emergency/spot/RFQ/RFP routing and 24-hour PO consolidation.
+- Versioned policy JSON with effective dates. Amendment preview, buyer approval and policy history; processing selects the policy version effective on each requirement's creation date.
+- Preferred supplier ranking and CSV export.
+- Contract register, signed-PDF schedule extraction and add-contract flow.
+- Buyer approve/override audit actions; overrides require a written reason.
+- Audit trail and downloadable decision CSV.
+
+## API
+
+| Method | Endpoint | Purpose |
+|---|---|---|
+| GET | `/api/summary` | Master-data counts and active policy |
+| POST | `/api/process-batch` | Upload CSV and return JSON decisions |
+| POST | `/api/process-batch/export` | Upload CSV and download decision CSV |
+| GET | `/api/export/latest` | Download latest processed decisions |
+| GET | `/api/preferred-suppliers?as_of=2026-11-01` | Ranked suppliers with evidence |
+| GET | `/api/preferred-suppliers/export?as_of=2026-11-01` | Required four-column supplier CSV |
+| GET/POST | `/api/contracts` | List/add signed contracts |
+| POST | `/api/policy/preview` | Preview policy amendment |
+| POST | `/api/policy/approve/{id}` | Approve and activate version |
+| GET | `/api/policy` | Active policy data |
+| POST | `/api/chat` | Chat intake clarification/match |
+| POST | `/api/chat/confirm` | Create confirmed PR |
+| POST | `/api/action` | Record buyer approval/override |
+| GET | `/api/audit` | Audit events |
+
+Swagger docs are at `/docs`.
+
+## Policy and contract data
+
+The original task kit is retained under `data/`. `data/policy_v5.json` is the current policy data. Approved versions are archived in `data/policies/`. PDF-only contracts are discovered from their signed PDFs at load time; uploaded signed contracts are extracted and appended to the register and line data.
+
+## Deployment
+
+The app is Docker-ready for Render, Railway or any container host. Configure the service to run `docker compose` or build from the included Dockerfile and expose port `8000`. Attach a persistent disk at `/app/data`. A public hosted URL and public GitHub repository require the candidate's own hosting/GitHub account credentials; they are not created by this local project package.
+
+## Before submission
+
+1. Run the app and test the complete sample batch.
+2. Deploy it and verify the public URL from a private browser.
+3. Push the repository publicly before the build freeze.
+4. On blind-test day, process the supplied batch under v5.0, approve the amendment through Policy Studio, process again, and export the preferred supplier list as of the requested date.
+5. Put the three final CSVs in `submission/` before the blind-test cutoff.

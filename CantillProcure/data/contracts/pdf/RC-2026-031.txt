@@ -1,0 +1,42 @@
+                                                        RATE CONTRACT
+                                                           Contract No. RC-2026-031
+
+This Rate Contract is entered into on 2026-11-15 between Corvo Engineering Pvt Ltd, having its registered
+office at Plot 14, MIDC Bhosari, Pune 411026 ("the Buyer"), and Pneumatic Point, Pune (Supplier ID S021)
+("the Supplier").
+
+1. Term. This contract is valid from 2026-11-15 to 2027-11-14 (both days inclusive), unless terminated earlier in
+writing.
+
+2. Value ceiling. The total value of purchase orders placed under this contract shall not exceed INR 20,00,000
+(excluding GST). Orders beyond the ceiling require a fresh sourcing event.
+
+3. Rates. The Supplier shall supply the items in Schedule A at the fixed rates below, excluding GST, delivered to
+the Buyer's plants at PUN1 (Bhosari) and CHK1 (Chakan). Rates are firm for the term of the contract.
+
+4. Payment. 45 days from receipt of material and invoice.
+
+5. Delivery. Within 7 working days of the purchase order unless agreed otherwise.
+
+Schedule A: Items and rates
+
+      #           Item code                                     Description            UoM       Rate (INR)
+
+  1        ITM-1036                      Pneumatic cylinder 50x100                    NOS                3,537.76
+
+  2        ITM-1037                      Solenoid valve 5/2 1/4 inch                  NOS                2,439.01
+
+  3        ITM-1039                      FRL unit 1/2 inch                            NOS                2,746.87
+
+
+
+
+For Corvo Engineering Pvt Ltd                                                                For Pneumatic Point
+
+
+Authorised Signatory                                                                         Authorised Signatory
+
+
+
+Fictional document created for the Cantill.ai Full-stack Intern task.
+
