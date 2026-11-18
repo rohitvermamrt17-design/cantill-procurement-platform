@@ -64,10 +64,3 @@ The original task kit is retained under `data/`. `data/policy_v5.json` is the cu
 
 The app is Docker-ready for Render, Railway or any container host. Configure the service to run `docker compose` or build from the included Dockerfile and expose port `8000`. Attach a persistent disk at `/app/data`. A public hosted URL and public GitHub repository require the candidate's own hosting/GitHub account credentials; they are not created by this local project package.
 
-## Before submission
-
-1. Run the app and test the complete sample batch.
-2. Deploy it and verify the public URL from a private browser.
-3. Push the repository publicly before the build freeze.
-4. On blind-test day, process the supplied batch under v5.0, approve the amendment through Policy Studio, process again, and export the preferred supplier list as of the requested date.
-5. Put the three final CSVs in `submission/` before the blind-test cutoff.
